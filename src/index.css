@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"); */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* -webkit-user-select: none; */
+  /* font-family: "Quicksand", sans-serif !important; */
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.tooltip {
+  border-radius: 0.25rem;
+  background: #26313c;
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 15px 30px 40px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+@layer utilities {
+  @variants hover {
+    .bg-color {
+      background-color: #5aa08e;
+    }
+  }
+  .bg-color {
+    background-color: #5aa08e;
+  }
+  .margin {
+    margin: 5rem;
+  }
+  .padding {
+    padding: 3rem;
+  }
+  .borderAc {
+    border: 3px solid #5aa08e;
+  }
+  .textColor {
+    color: #5aa08e;
+    display: block;
+    padding: 10px;
+    white-space: nowrap !important;
+  }
+}

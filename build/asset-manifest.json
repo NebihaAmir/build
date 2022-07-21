@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.68ad5835.chunk.css",
+    "main.js": "/static/js/main.ae4ec563.chunk.js",
+    "main.js.map": "/static/js/main.ae4ec563.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a47b776d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a47b776d.js.map",
+    "static/js/2.7d9ca851.chunk.js": "/static/js/2.7d9ca851.chunk.js",
+    "static/js/2.7d9ca851.chunk.js.map": "/static/js/2.7d9ca851.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.68ad5835.chunk.css.map": "/static/css/main.68ad5835.chunk.css.map",
+    "static/js/2.7d9ca851.chunk.js.LICENSE.txt": "/static/js/2.7d9ca851.chunk.js.LICENSE.txt",
+    "static/media/Alga-logo.7447e436.png": "/static/media/Alga-logo.7447e436.png",
+    "static/media/amole.ed0a72fc.jpg": "/static/media/amole.ed0a72fc.jpg",
+    "static/media/cbe.7a51f0f3.png": "/static/media/cbe.7a51f0f3.png",
+    "static/media/mastercard.d8bc7b15.jpg": "/static/media/mastercard.d8bc7b15.jpg",
+    "static/media/telebirr.f1a0c0cf.png": "/static/media/telebirr.f1a0c0cf.png",
+    "static/media/visa.a879f270.png": "/static/media/visa.a879f270.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a47b776d.js",
+    "static/js/2.7d9ca851.chunk.js",
+    "static/css/main.68ad5835.chunk.css",
+    "static/js/main.ae4ec563.chunk.js"
+  ]
+}

@@ -1,0 +1,43 @@
+image: node:16.9.1
+stages:
+  # - install_packages
+  # - build
+  - deploy
+# cache:
+#   paths:
+#     - node_modules/
+# install-job:
+#   stage: install_packages
+#   script:
+#     - yarn install
+#   artifacts:
+#     paths:
+#       - node_modules/
+# build-job:
+#   stage: build
+#   script:
+#     - rm -rf build
+#     - yarn build
+#   artifacts:
+#     paths:
+#       - build/
+before_script:
+  - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - ssh-keyscan $SSH_IP >> ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  - git config --global user.email "meetredwan@gmail.com"
+  - git config --global user.name "RCNDCC"
+deploy-job:
+  stage: deploy
+  type: deploy
+  environment:
+    name: production
+    url: http://157.230.190.157
+  script:
+    - ssh $SSH_USERNAME@$SSH_IP "mkdir -p $PATH_TO_PROJECT && cd $PATH_TO_PROJECT && git pull origin master && \cp -r build /var/www/html/user && exit"
+  only:
+    - master
