@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9b63901a.css",
+    "main.js": "/static/js/main.959ceb39.js",
+    "static/media/amole.jpg": "/static/media/amole.ed0a72fc2bd807fc1549.jpg",
+    "static/media/telebirr.png": "/static/media/telebirr.f1a0c0cfe0260f43c26c.png",
+    "static/media/visa.png": "/static/media/visa.a879f27018f21dc3d153.png",
+    "static/media/cbe.png": "/static/media/cbe.7a51f0f30ea61cb39cb8.png",
+    "static/media/mastercard.jpg": "/static/media/mastercard.d8bc7b15dd73862a06eb.jpg",
+    "static/media/Alga-logo.png": "/static/media/Alga-logo.7447e43642352eb84454.png",
+    "index.html": "/index.html",
+    "main.9b63901a.css.map": "/static/css/main.9b63901a.css.map",
+    "main.959ceb39.js.map": "/static/js/main.959ceb39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b63901a.css",
+    "static/js/main.959ceb39.js"
+  ]
+}
